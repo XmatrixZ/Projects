@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="margin-left:280px">CALCULATOR</h2>
+    <br>
+    <input  style="margin-left:200px" type="number" placeholder="first number" id="fno">
+    <input style="margin-left:10px" type="number" placeholder="second number" id="sno">
+    <h3 id="cal"style="margin-left:240px">Result:  </h3>
+    <button style="margin-left:240px" onclick="sum()">add</button> 
+    <button style="margin-left:5px" onclick="multiply()">multiply</button> 
+    <button style="margin-left:5px" onclick="divide()">divide</button> 
+    <button style="margin-left:5px" onclick="subtract()">subtract</button> 
+</body>
+      <script>
+          function sum()
+          {
+              var sum= document.getElementById('cal');
+              var fno= document.getElementById('fno').value;
+              var sno= document.getElementById('sno').value;
+              sum.innerText=Number(fno)+Number(sno);
+          }
+          function multiply()
+          {
+              var sum= document.getElementById('cal');
+              var fno= document.getElementById('fno').value;
+              var sno= document.getElementById('sno').value;
+              sum.innerText=Number(fno)*Number(sno);
+          }
+          function divide()
+          {
+              var sum= document.getElementById('cal');
+              var sno= document.getElementById('sno').value;
+              if(Number(sno)==0)
+              sum.innerText="Division Not Possible";
+              else
+               {
+                  var fno= document.getElementById('fno').value;
+                  sum.innerText=Number(fno)/Number(sno);
+                }
+          }
+          function subtract()
+          {
+              var sum= document.getElementById('cal');
+              var fno= document.getElementById('fno').value;
+              var sno= document.getElementById('sno').value;
+              sum.innerText=Number(fno)-Number(sno);
+          }
+      </script>
+</html>

@@ -6,15 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    <h2 style="margin-left:280px">CALCULATOR</h2>
-    <br>
-    <input  style="margin-left:200px" type="number" placeholder="first number" id="fno">
-    <input style="margin-left:10px" type="number" placeholder="second number" id="sno">
-    <h3 id="cal"style="margin-left:240px">Result:  </h3>
-    <button style="margin-left:240px" onclick="sum()">add</button> 
-    <button style="margin-left:5px" onclick="multiply()">multiply</button> 
-    <button style="margin-left:5px" onclick="divide()">divide</button> 
-    <button style="margin-left:5px" onclick="subtract()">subtract</button> 
+    <div style="height:1200px;width:1250px;">
+        <div style="height:7%;width:1250px;background-color:cyan;">
+
+            <h2 style="margin-left:280px;padding-top: 30px;">CALCULATOR</h2>
+            <br>
+        </div>
+        <div style="height:93%;width:1250px;background-color:greenyellow">
+            <input  style="margin-left:240px;margin-top: 30px;height: 30px;width:120px; border-radius: 5px;padding-left: 8px;" type="number" placeholder="First number" id="fno">
+            <input style="margin-left:15px;height: 30px;width:120px;border-radius:5px;padding-left: 8px;" type="number" placeholder="Second number" id="sno">
+            <h2 id="cal"style="margin-left:240px;color:red;">Result:  </h2>
+            <button style="margin-left:240px;border-radius:5px;" onclick="sum()">Add</button> 
+            <button style="margin-left:12px;border-radius:5px;" onclick="multiply()">Multiply</button> 
+            <button style="margin-left:12px;border-radius:5px;" onclick="divide()">Divide</button> 
+            <button style="margin-left:12px;border-radius:5px;" onclick="subtract()">Subtract</button> 
+            <div style="margin-left:700px;margin-top:10px;height:10px;width:15px;">
+                <img src="C:\Users\SHIVANSH DHONDIYAL\OneDrive\Documents\HTML\calculator.png" width="250" height="300">
+            </div>
+        </div>
+    </div>
 </body>
       <script>
           function sum()

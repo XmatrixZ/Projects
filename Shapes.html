@@ -7,26 +7,30 @@
             
       </head>
       <body>
-       
-          <div id ="shape" style="margin-left:460px;height:100px;width:200px;background-color:black;"></div>
-          <br>
-          <br>
-          <button style="margin-left:400px;height:50px;width:100px;background-color:red;"onclick="rectangle()">Rectangle</button>
-          <button style="margin-left:10px;height:50px;width:100px;background-color:yellow"onclick="square()">Square</button>
-          <button style="margin-left:10px;height:50px;width:100px;background-color:green"onclick="circle()">Circle</button>
+       <div style="background-color:royalblue;height:580px;width:1250px;">
+            <h1 style="margin-left:460px;color:white">Shape Changer</h1>
+            <br>
+            <div id ="shape" style="margin-left:460px;height:100px;width:200px;background-color:cyan;"></div>
+            <br><br><br><br><br>
+            <div>
+              <button style="margin-left:290px;height:60px;width:150px;background-color:red;color:white;border-radius: 5px;"onclick="rectangle()">Rectangle</button>
+              <button style="margin-left:40px;height:60px;width:150px;background-color:yellow;color:white;border-radius: 5px;"onclick="square()">Square</button>
+              <button style="margin-left:40px;height:60px;width:150px;background-color:green;color:white;border-radius: 5px;"onclick="circle()">Circle</button>
+            </div>
+       </div>
       </body>
       <script>
           function circle(){  
             document.getElementById('shape').style['width']='100px';
             document.getElementById('shape').style['background-color']='green';
             document.getElementById('shape').style['border-radius']='50%';
-            document.getElementById('shape').style['margin-left']='520px';
+            document.getElementById('shape').style['margin-left']='510px';
             }
             function rectangle(){  
             document.getElementById('shape').style['width']='300px';
             document.getElementById('shape').style['background-color']='red';
             document.getElementById('shape').style['border-radius']='0%';
-            document.getElementById('shape').style['margin-left']='420px';
+            document.getElementById('shape').style['margin-left']='400px';
             }
             function square(){  
             document.getElementById('shape').style['width']='100px';

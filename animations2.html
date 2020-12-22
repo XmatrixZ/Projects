@@ -1,0 +1,137 @@
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <style> 
+ .Contain{
+   width: 100px;
+   height: 100px;
+   margin-top: 250px;
+   margin-left: 430px;
+   position: relative;
+   background-color:black;
+   animation: mov 4s infinite;
+   animation-direction: alternate;
+   animation-timing-function:linear;
+ }
+ .Contain .hand
+ {
+  width: 90.5px;
+  height: 27px;
+  margin-top:-65%;
+  margin-left: 58.8%;
+  position: relative;
+  background-color:black;
+  border-radius: 12px;
+ }
+ .Contain .button{
+  width: 40px;
+  height: 80px;
+  margin-top:-1.5%;
+  margin-left: 20%;
+  background-color:black;
+  color: white;
+  border: transparent;
+  position: relative;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 20px;
+  text-align: center;
+ }
+ .Contain .hand2
+ {
+  width: 20px;
+  height: 67px;
+  margin-top:-71%;
+  margin-left: 122%;
+  background-color:black;
+  position: relative;
+  animation: hi 5s infinite;
+  animation-timing-function:linear;
+  border-radius: 12px;
+ }
+ .DisplayBox{
+   width: 175px;
+   height: 85px;
+   margin-top: 40px;
+   margin-left: 20px;
+   background: transparent;
+   text-align: center;
+   color: transparent;
+   display: inline;
+   position: relative;
+   border-radius: 8px;
+   padding-top: 60px;
+   padding-left: 5px;
+   border-color: red;
+   animation: dispmov 10s infinite;
+   animation-timing-function:linear;
+ }
+ @keyframes mov {
+   0%   {margin-left: 360px;}
+   25%  {margin-left: 430px;}
+   50%  {margin-left: 550px;}
+   75%  {margin-left: 630px;}
+   100% {margin-left: 710px;}
+ }
+ @keyframes dispmov {
+   0%   {}
+   10%  {}
+   20%  {}
+   30%  {}
+   40%  {}
+   50%  {background-color:transparent;color: transparent;border-style: hidden;}
+   60%  {background-color:transparent;color: transparent;border-style: hidden;}
+   70%  {background-color:rgb(15, 0, 0);color:rgb(211, 0, 211);border-color: red;border-style: solid;}
+   80%  {background-color:rgb(15, 0, 0);color: rgb(136, 255, 0);border-color:red;border-style: solid;}
+   90%  {background-color:transparent;color: transparent;border-style: hidden;}
+   100% {background-color:transparent;color: transparent;border-style: hidden;}
+ }
+  @keyframes hi {
+   0%    {margin-left: 128.7px;}
+   4%   {-ms-transform: rotate(0deg);transform: rotate(1deg);margin-left: 129.6px;}
+   10%   {-ms-transform: rotate(0deg);transform: rotate(3deg);margin-left: 130.6px;}
+   20%   {-ms-transform: rotate(3deg);transform: rotate(8deg);margin-left: 131.8px;}
+   30%   {-ms-transform: rotate(8deg);transform: rotate(13deg);margin-left: 133.5px;}
+   38%   {-ms-transform: rotate(13deg);transform: rotate(8deg);margin-left: 131.6px;}
+   45%   {-ms-transform: rotate(8deg);transform: rotate(3deg);margin-left: 130px;}
+   51%   {-ms-transform: rotate(3deg);transform: rotate(0deg);margin-left: 128.2px;}
+   60%   {-ms-transform: rotate(0deg);transform: rotate(-3deg);margin-left: 127.3px;}
+   69%   {-ms-transform: rotate(-3deg);transform: rotate(-8deg);margin-left: 125.6px;}
+   78%   {-ms-transform: rotate(-8deg);transform: rotate(-13deg);margin-left: 123.5px;}
+   83%   {-ms-transform: rotate(-13deg);transform: rotate(-8deg);margin-left: 125.2px;}
+   94%   {-ms-transform: rotate(-8deg);transform: rotate(-3deg);margin-left: 126.1px;}
+   100%  {-ms-transform: rotate(-3deg);transform: rotate(0deg);margin-left: 127.8px;}
+
+ }
+ </style>
+ </head>
+ <body>
+  <div style="height:660px;width:1250px;border-radius: 30px;">
+   <div style="height:10%;width:1250px;display:flex;background-color:rgb(22, 0, 0)">
+    <h1 style="color: cyan;margin-left:430px;margin-top: 15px;">ARTIFICIAL INTELLIGENCE</h1>
+  </div>
+   <div style="height:90%;width:1250px;display:flex;background-color:rgb(68, 1, 1);">
+    <div style="position:absolute;height:100%;width: 100%;">
+      <img src="./img/Theater.jpg" style="padding-left:1.1%;padding-top:0.05%;width:97%;height:99%;">
+    </div>
+    <div class="Contain">
+      <img src="./img/AnimationsDash.png" style="padding-left:3%;padding-top:2.2%;width:93px;height:92.5px;">
+      <div class="button">
+        <img src="./img/PI1.png" style="margin-left:-18%;margin-top:-8%;width:56px;height:85px;border-color: white;">
+      </div>
+      <div class="hand"></div>
+      <div class="hand2"></div>
+    </div>
+    <div class="DisplayBox" style="margin-left:-180px;font-size: 20px;" >I LOVE ANIME!!!</div>
+    <div class="DisplayBox" style="height:0.01%;width:4%;margin-top:180px;margin-left:14px;border-radius:38%;"></div>
+    <div class= "DisplayBox ">HI I AM NOT A ROBOT!</div>
+  </div>
+ </body>
+ <script>
+ // function wave()
+  //{
+  //  document.getElementById('hands').className = "movehands";
+ // }
+</script>
+ </html>

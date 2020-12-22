@@ -9,7 +9,7 @@
               margin-left:400px;margin-top:10px;
               height: 40px;width:200px;
               color:white;background-color: rgb(16, 148, 16);
-              font-size:20px;border-radius:5px;padding:5px;  
+              font-size:20px;border-radius:5px;padding:5px;
         }
     </style>
 </head>
@@ -150,8 +150,15 @@
             <p style="margin-left:400px;margin-top:2px;margin-bottom:2px;color:grey;">.You may receive SMS Notifications from</p>
             <p style="margin-left:400px;margin-top:2px;margin-bottom:2px;color:grey;">us and can opt out any time.</p>
          </div>
-         <button class="button">Sign Up</button>
+         <button class="button" onclick="submit()" id="name">Sign Up</button>
         </div>
     </div>
 </body>
+<script>
+    function submit()
+    {
+        var x=document.getElementById("name").value
+        window.alert('Form submitted by'+x)
+    }
+</script>
 </html>

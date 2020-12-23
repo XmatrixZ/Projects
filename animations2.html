@@ -78,17 +78,25 @@
    margin-left: 60px;
    background:rgb(27, 0, 0);
    text-align: center;
-   color: rgb(255, 130, 255);
+   color:rgb(2, 255, 2);
    display: inline;
    position: absolute;
-   border-radius: 4px;
+   border-radius: 6px;
    border-width: 1px;
    border-style: solid;
-   border-color:yellow;
-   outline: yellow;
    padding-top: 10px;
    padding-left: 5px;
    box-shadow: -2px 25px 60px 45px rgba(0, 0, 0, 0.24);
+   animation: color 2.5s infinite;
+   animation-direction: alternate;
+   animation-timing-function:linear;
+ }
+ @keyframes color {
+   0%   {transition: border 0.5s ease-out ;border-color: red;outline: red;}
+   25%  {transition: border 0.5s ease-out;border-color: blue;outline: blue;}
+   50%  {transition: border 0.5s ease-out;border-color: rgb(255, 126, 147);outline: rgb(255, 126, 147);}
+   75%  {transition: border 0.5s ease-out;border-color: yellow;outline: yellow;}
+   100% {transition: border 0.5s ease-out;border-color: cyan;outline: cyan;}
  }
  @keyframes mov {
    0%   {margin-left: 360px;}

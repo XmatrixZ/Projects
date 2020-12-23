@@ -17,7 +17,7 @@
  }
  .Contain .hand
  {
-  width: 90.5px;
+  width: 90.3px;
   height: 27px;
   margin-top:-65%;
   margin-left: 58.8%;
@@ -67,7 +67,7 @@
    padding-top: 60px;
    padding-left: 5px;
    border-color: red;
-   animation: dispmov 10s infinite;
+   animation: dispmov 8s infinite;
    animation-timing-function:linear;
    animation-play-state: running;
  }
@@ -81,7 +81,11 @@
    color: rgb(255, 130, 255);
    display: inline;
    position: absolute;
-   border-radius: 8px;
+   border-radius: 4px;
+   border-width: 1px;
+   border-style: solid;
+   border-color:yellow;
+   outline: yellow;
    padding-top: 10px;
    padding-left: 5px;
    box-shadow: -2px 25px 60px 45px rgba(0, 0, 0, 0.24);
@@ -107,19 +111,19 @@
    100% {background-color:transparent;color: transparent;border-style: hidden;}
  }
   @keyframes hi {
-   0%    {margin-left: 128.7px;}
+   0%    {margin-left: 128.8px;}
    4%   {-ms-transform: rotate(0deg);transform: rotate(1deg);margin-left: 129.6px;}
-   10%   {-ms-transform: rotate(0deg);transform: rotate(3deg);margin-left: 130.6px;}
-   20%   {-ms-transform: rotate(3deg);transform: rotate(8deg);margin-left: 131.8px;}
+   11%   {-ms-transform: rotate(0deg);transform: rotate(3deg);margin-left: 130.6px;}
+   22%   {-ms-transform: rotate(3deg);transform: rotate(8deg);margin-left: 131.8px;}
    30%   {-ms-transform: rotate(8deg);transform: rotate(13deg);margin-left: 133.5px;}
    38%   {-ms-transform: rotate(13deg);transform: rotate(8deg);margin-left: 131.6px;}
    45%   {-ms-transform: rotate(8deg);transform: rotate(3deg);margin-left: 130px;}
    51%   {-ms-transform: rotate(3deg);transform: rotate(0deg);margin-left: 128.2px;}
    60%   {-ms-transform: rotate(0deg);transform: rotate(-3deg);margin-left: 127.3px;}
    69%   {-ms-transform: rotate(-3deg);transform: rotate(-8deg);margin-left: 125.6px;}
-   78%   {-ms-transform: rotate(-8deg);transform: rotate(-13deg);margin-left: 123.5px;}
-   83%   {-ms-transform: rotate(-13deg);transform: rotate(-8deg);margin-left: 125.2px;}
-   94%   {-ms-transform: rotate(-8deg);transform: rotate(-3deg);margin-left: 126.1px;}
+   77%   {-ms-transform: rotate(-8deg);transform: rotate(-13deg);margin-left: 123.8px;}
+   85%   {-ms-transform: rotate(-13deg);transform: rotate(-8deg);margin-left: 125.6px;}
+   90%   {-ms-transform: rotate(-8deg);transform: rotate(-3deg);margin-left: 126.9px;}
    100%  {-ms-transform: rotate(-3deg);transform: rotate(0deg);margin-left: 127.8px;}
  }
  </style>
@@ -144,18 +148,24 @@
        <div class="DisplayBox" id="Stop" style="margin-left:-180px;font-size: 20px;" >I LOVE ANIME!!!</div>
        <div class="DisplayBox" id="Stop" style="height:0.01%;width:4%;margin-top:180px;margin-left:14px;border-radius:38%;"></div>
        <div id="Stop" class= "DisplayBox">HI I AM NOT A ROBOT!</div>
-       <button class="button" onclick="StopMov();" ondblclick="Mov()">PRESS ME PLZZ!!!</button>
+       <button class="button" onclick="Mov();">PRESS ME PLZZ!!!</button>
       </div>
    </div>
  </body>
  <script>
-  function StopMov()
-  {
-    document.getElementById('Stop').style.animationPlayState="paused";
-  }
+  var count=1;
   function Mov()
   {
-    document.getElementById('Stop').style.animationPlayState="running";
+    if(count==1)
+    {
+      document.getElementById('Stop').style.animationPlayState="paused";
+      count=0;
+    }
+    else
+    {
+      document.getElementById('Stop').style.animationPlayState="running";
+      count=1;
+    }
   }
 </script>
  </html>

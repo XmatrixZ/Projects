@@ -13,6 +13,7 @@
    animation: mov 4s infinite;
    animation-direction: alternate;
    animation-timing-function:linear;
+   animation-play-state: running;
  }
  .Contain .hand
  {
@@ -24,7 +25,7 @@
   background-color:black;
   border-radius: 12px;
  }
- .Contain .button{
+ .Contain .body{
   width: 40px;
   height: 80px;
   margin-top:-1.5%;
@@ -37,6 +38,7 @@
   padding: 12px;
   border-radius: 20px;
   text-align: center;
+  animation-play-state: running;
  }
  .Contain .hand2
  {
@@ -49,6 +51,7 @@
   animation: hi 5s infinite;
   animation-timing-function:linear;
   border-radius: 12px;
+  animation-play-state: running;
  }
  .DisplayBox{
    width: 175px;
@@ -66,6 +69,22 @@
    border-color: red;
    animation: dispmov 10s infinite;
    animation-timing-function:linear;
+   animation-play-state: running;
+ }
+ .button{
+   width: 165px;
+   height: 85px;
+   margin-top: 380px;
+   margin-left: 60px;
+   background:rgb(27, 0, 0);
+   text-align: center;
+   color: rgb(255, 130, 255);
+   display: inline;
+   position: absolute;
+   border-radius: 8px;
+   padding-top: 10px;
+   padding-left: 5px;
+   box-shadow: -2px 25px 60px 45px rgba(0, 0, 0, 0.24);
  }
  @keyframes mov {
    0%   {margin-left: 360px;}
@@ -102,36 +121,41 @@
    83%   {-ms-transform: rotate(-13deg);transform: rotate(-8deg);margin-left: 125.2px;}
    94%   {-ms-transform: rotate(-8deg);transform: rotate(-3deg);margin-left: 126.1px;}
    100%  {-ms-transform: rotate(-3deg);transform: rotate(0deg);margin-left: 127.8px;}
-
  }
  </style>
  </head >
- <body style="padding: 0px;margin: 0px;">
+ <body style="margin: 0px;">
    <div style="height:695px;width:1250px;margin: 0px;">
-   <div style="height:10%;width:1262px;display:flex;background-color:rgb(22, 0, 0)">
-    <h1 style="color: cyan;margin-left:430px;margin-top: 15px;">ARTIFICIAL INTELLIGENCE</h1>
-   </div>
-   <div style="height:90%;width:1262px;display:flex;background-color:rgb(68, 1, 1);">
-   <div style="position:absolute;height:100%;width: 100%;">
-    <img src="./img/Theater.jpg" style="padding-left:0.8%;padding-top:0.6%;width:98%;height:99.3%;">
-   </div>
-   <div class="Contain">
-    <img src="./img/AnimationsDash.png" style="padding-left:3%;padding-top:2.2%;width:93px;height:92.5px;">
-    <div class="button">
-      <img src="./img/PI1.png" style="margin-left:-18%;margin-top:-8%;width:56px;height:85px;border-color: white;">
-    </div>
-    <div class="hand"></div>
-    <div class="hand2"></div>
-   </div>
-   <div class="DisplayBox" style="margin-left:-180px;font-size: 20px;" >I LOVE ANIME!!!</div>
-   <div class="DisplayBox" style="height:0.01%;width:4%;margin-top:180px;margin-left:14px;border-radius:38%;"></div>
-   <div class= "DisplayBox ">HI I AM NOT A ROBOT!</div>
+     <div style="height:10%;width:1262px;display:flex;background-color:rgb(22, 0, 0)">
+       <h1 style="color: cyan;margin-left:430px;margin-top: 15px;">ARTIFICIAL INTELLIGENCE</h1>
+     </div>
+     <div style="height:90%;width:1262px;display:flex;background-color:rgb(68, 1, 1);">
+       <div style="position:absolute;height:100%;width: 100%;">
+         <img src="./img/Theater.jpg" style="padding-left:0.8%;padding-top:0.6%;width:98%;height:99.3%;">
+       </div>
+       <div class="Contain" id="Stop">
+         <img src="./img/AnimationsDash.png" style="padding-left:3%;padding-top:2.2%;width:93px;height:92.5px;">
+         <div class="body" id="Stop">
+           <img src="./img/PI1.png" style="margin-left:-18%;margin-top:-8%;width:56px;height:85px;border-color: white;">
+         </div>
+         <div class="hand" ></div>
+         <div class="hand2" id="Stop" ></div>
+       </div>
+       <div class="DisplayBox" id="Stop" style="margin-left:-180px;font-size: 20px;" >I LOVE ANIME!!!</div>
+       <div class="DisplayBox" id="Stop" style="height:0.01%;width:4%;margin-top:180px;margin-left:14px;border-radius:38%;"></div>
+       <div id="Stop" class= "DisplayBox">HI I AM NOT A ROBOT!</div>
+       <button class="button" onclick="StopMov();" ondblclick="Mov()">PRESS ME PLZZ!!!</button>
+      </div>
    </div>
  </body>
  <script>
- // function wave()
-  //{
-  //  document.getElementById('hands').className = "movehands";
- // }
+  function StopMov()
+  {
+    document.getElementById('Stop').style.animationPlayState="paused";
+  }
+  function Mov()
+  {
+    document.getElementById('Stop').style.animationPlayState="running";
+  }
 </script>
  </html>

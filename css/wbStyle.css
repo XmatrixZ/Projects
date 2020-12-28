@@ -1,0 +1,99 @@
+/*INITIAL CONDITION*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/*MAIN CONTENT*/
+body{
+    background-color: rgb(16, 0, 0);
+    height: 800px;
+    width: 600px;
+}
+.Container1{
+    margin-left: 15px;
+    margin-top: 18px;
+    background-color: rgb(9, 0, 0);
+    border-color: cyan;
+    height: 650px;
+    width:1220px;
+}
+.ContentBox1{
+    margin-left: 45px;
+    margin-top: 135px;
+    background-color:black;
+    height: 470px;
+    width:540px;
+    border-color: cyan;
+}
+.ContentBox2{
+    margin-left: 30px;
+    margin-top: 130px;
+    background-color:black;
+    height: 480px;
+    width:580px;
+    border-color: cyan;
+
+}
+.ContentBox3{
+    margin-left: 20px;
+    margin-top: 120px;
+    background-color:black;
+    height: 490px;
+    width:1175px;
+    border-color: cyan;
+}
+.ContentBox4{
+    margin-left: 20px;
+    margin-top: 28px;
+    height: 200px;
+    width:1125px;
+    color: cyan;
+    justify-content: center;
+    align-items: center; 
+}
+.ContentBox5{
+    margin-left: 20px;
+    margin-top: 30px;
+    height: 190px;
+    width:1125px;
+    color: cyan;
+}
+.ContentBox6{
+    margin-left: 70px;
+    margin-top: 40px;
+    position: absolute;
+    padding-top: 35px;
+    text-align: center;
+    font-size: 25px;
+    width: 180px;
+    height: 100px;
+    color: cyan;
+    display: inline;
+}
+.Header1{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 180px;
+    margin-top: 25px;
+    height: 70px;
+    width:160px;
+    text-align: center;
+    padding-top: 20px;
+    color: red;
+    border-color: cyan;
+}
+.Writing{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    margin-top: 20px;
+    height: 340px;
+    width:520px;
+    color: red;
+    border-color: cyan;
+}

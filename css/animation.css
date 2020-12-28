@@ -1,0 +1,212 @@
+/*----------------------------------------LANGUAGE PICTURE COLOR--------------------------------------*/
+.Img{
+    margin-left: 35px;
+    margin-top: 45px;
+    position: relative;
+    display: inline;
+    box-shadow: 0 0 10px 8px #0f0;
+    box-shadow: 0 0 20px 8px #0f0;
+    box-shadow: 0 0 30px 8px #0f0;
+    box-shadow: 0 0 40px 8px #0f0; 
+    box-shadow: 0 0 50px 8px #0f0;
+    animation: ImgLogo 4s linear infinite;
+}
+
+
+/*------------------------------------------SOCIAL MEDIA ANIMATION-------------------------------------*/
+ul{
+    position: relative;
+    display: flex;
+    border: transparent;
+}
+ul li{
+    position: relative;
+    list-style: none;
+    margin: 0 80px;
+    cursor: pointer;
+    width: 90px;
+    border: transparent;
+}
+ul li a{
+    text-decoration: none;
+    color: transparent;
+}
+ul li a .fa{
+    font-size: 100px;
+    color: rgb(53, 52, 52);
+    border: transparent;
+}
+ul li::before{
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 100px;
+    overflow: hidden;
+    cursor: pointer;
+    height: 0;
+    transition: 0.5s ease-in-out;
+    border-width: 20px;
+}
+ul li:nth-child(1)::before{
+    content: '\f232';
+    color:greenyellow;
+    border-bottom: 2px solid greenyellow;
+
+}
+ul li:nth-child(2)::before{
+    content: '\f16d';
+    color: rgb(255, 97, 40);
+    border-bottom: 2px solid rgb(255, 97, 40);
+
+}
+ul li:nth-child(3)::before{
+    content: '\f167';
+    color: red;
+    border-bottom: 2px solid red;
+}
+ul li:hover::before{
+    height: 100%;
+}
+@keyframes ImgLogo{
+    0%    {filter:hue-rotate(0deg);}
+    100%  {filter: hue-rotate(360deg);}
+}
+
+
+/*---------------------------------------ROBOT ANIMATION-----------------------------------------------*/
+.Contain{
+    width: 100px;
+    height: 100px;
+    margin-top: 250px;
+    margin-left: 430px;
+    position: relative;
+    background-color:black;
+    animation: mov 4s infinite;
+    animation-direction: alternate;
+    animation-timing-function:linear;
+    animation-play-state: running;
+  }
+  .Contain .hand
+  {
+   width: 90.3px;
+   height: 27px;
+   margin-top:-65%;
+   margin-left: 58.8%;
+   position: relative;
+   background-color:black;
+   border-radius: 12px;
+  }
+  .Contain .body{
+   width: 40px;
+   height: 80px;
+   margin-top:-1.5%;
+   margin-left: 20%;
+   background-color:black;
+   color: white;
+   border: transparent;
+   position: relative;
+   font-size: 16px;
+   padding: 12px;
+   border-radius: 20px;
+   text-align: center;
+   animation-play-state: running;
+  }
+  .Contain .hand2
+  {
+   width: 20px;
+   height: 67px;
+   margin-top:-71%;
+   margin-left: 122%;
+   background-color:black;
+   position: relative;
+   animation: hi 5s infinite;
+   animation-timing-function:linear;
+   border-radius: 12px;
+   animation-play-state: running;
+  }
+  .DisplayBox{
+    width: 175px;
+    height: 85px;
+    margin-top: 40px;
+    margin-left: 20px;
+    background: transparent;
+    text-align: center;
+    color: transparent;
+    display: inline;
+    position: relative;
+    border-radius: 8px;
+    padding-top: 60px;
+    padding-left: 5px;
+    border-color: red;
+    animation: dispmov 8s infinite;
+    animation-timing-function:linear;
+    animation-play-state: running;
+  }
+  .button{
+    width: 165px;
+    height: 85px;
+    margin-top: 380px;
+    margin-left: 60px;
+    background:rgb(27, 0, 0);
+    text-align: center;
+    color:rgb(2, 255, 2);
+    display: inline;
+    position: absolute;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    padding-top: 10px;
+    padding-left: 5px;
+    box-shadow: -2px 25px 60px 45px rgba(0, 0, 0, 0.24);
+    animation: color 2.5s infinite;
+    animation-direction: alternate;
+    animation-timing-function:linear;
+    font-size: 16px;
+  }
+  @keyframes color {
+    0%   {transition: border 0.5s ease-out ;border-color: red;outline: red;}
+    25%  {transition: border 0.5s ease-out;border-color: blue;outline: blue;}
+    50%  {transition: border 0.5s ease-out;border-color: rgb(255, 126, 147);outline: rgb(255, 126, 147);}
+    75%  {transition: border 0.5s ease-out;border-color: yellow;outline: yellow;}
+    100% {transition: border 0.5s ease-out;border-color: cyan;outline: cyan;}
+  }
+  @keyframes mov {
+    0%   {margin-left: 360px;}
+    25%  {margin-left: 430px;}
+    50%  {margin-left: 550px;}
+    75%  {margin-left: 630px;}
+    100% {margin-left: 710px;}
+  }
+  @keyframes dispmov {
+    0%   {}
+    10%  {}
+    20%  {}
+    30%  {}
+    40%  {}
+    50%  {background-color:transparent;color: transparent;border-style: hidden;}
+    60%  {background-color:transparent;color: transparent;border-style: hidden;}
+    70%  {background-color:rgb(15, 0, 0);color:rgb(211, 0, 211);border-color: red;border-style: solid;}
+    80%  {background-color:rgb(15, 0, 0);color: rgb(136, 255, 0);border-color:red;border-style: solid;}
+    90%  {background-color:transparent;color: transparent;border-style: hidden;}
+    100% {background-color:transparent;color: transparent;border-style: hidden;}
+  }
+   @keyframes hi {
+    0%    {margin-left: 128.8px;}
+    4%   {-ms-transform: rotate(0deg);transform: rotate(1deg);margin-left: 129.6px;}
+    11%   {-ms-transform: rotate(0deg);transform: rotate(3deg);margin-left: 130.6px;}
+    22%   {-ms-transform: rotate(3deg);transform: rotate(8deg);margin-left: 131.8px;}
+    30%   {-ms-transform: rotate(8deg);transform: rotate(13deg);margin-left: 133.5px;}
+    38%   {-ms-transform: rotate(13deg);transform: rotate(8deg);margin-left: 131.6px;}
+    45%   {-ms-transform: rotate(8deg);transform: rotate(3deg);margin-left: 130px;}
+    51%   {-ms-transform: rotate(3deg);transform: rotate(0deg);margin-left: 128.2px;}
+    60%   {-ms-transform: rotate(0deg);transform: rotate(-3deg);margin-left: 127.3px;}
+    69%   {-ms-transform: rotate(-3deg);transform: rotate(-8deg);margin-left: 125.6px;}
+    77%   {-ms-transform: rotate(-8deg);transform: rotate(-13deg);margin-left: 123.8px;}
+    85%   {-ms-transform: rotate(-13deg);transform: rotate(-8deg);margin-left: 125.6px;}
+    90%   {-ms-transform: rotate(-8deg);transform: rotate(-3deg);margin-left: 126.9px;}
+    100%  {-ms-transform: rotate(-3deg);transform: rotate(0deg);margin-left: 127.8px;}
+  }
+
+
+  /**/

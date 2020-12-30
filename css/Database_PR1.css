@@ -8,14 +8,15 @@ div{
     margin-top: 100px;
 }
 .Heading{
-margin-left:500px;
+margin-left:780px;
 font-weight: 100;
+font-size: 50px;
 }
 table,th,td{
     margin-left: 60px;
     border: 1px solid black;
     padding: 5px;
-    width: 1100px;
+    width: 1800px;
 }
 th{
     background-color: rgb(153, 255, 0);
@@ -25,6 +26,7 @@ td{
 }
 .Heading1{
     color:rgb(255, 0, 128);
+    font-size: 30px;
 }
 .attendence1{
     border-top: 0; margin: 0;
@@ -34,7 +36,13 @@ td{
 background-color: rgb(153, 255, 0);
 }
 .button{
-    margin-left: 400px;
+    margin-top: 60px;
+    margin-left: 900px;
     height: 80px;
     width: 180px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+    background-color: cyan;
 }

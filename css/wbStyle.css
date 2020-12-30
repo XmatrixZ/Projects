@@ -25,25 +25,27 @@ body{
     width:1220px;
 }
 .ContentBox1{
-    margin-left: 45px;
-    margin-top: 135px;
-    background-color:black;
-    height: 470px;
-    width:540px;
+    margin-left:150px;
+    margin-top:50px;
+    height: 100px;width:800px;
+    border-radius:10px;
+    font-size:40px;
+    padding-left:60px;
     border-color: cyan;
+    display: flex;
 }
 .ContentBox2{
     margin-left: 30px;
-    margin-top: 130px;
+    margin-top: 20px;
     background-color:black;
-    height: 480px;
+    height: 500px;
     width:580px;
     border-color: cyan;
 
 }
 .ContentBox3{
     margin-left: 20px;
-    margin-top: 120px;
+    margin-top: 20px;
     background-color:black;
     height: 490px;
     width:1175px;
@@ -54,8 +56,7 @@ body{
     margin-top: 28px;
     height: 200px;
     width:1125px;
-    color: cyan;
-    justify-content: center;
+    color: cyan;;
     align-items: center; 
 }
 .ContentBox5{
@@ -79,21 +80,58 @@ body{
 }
 .Header1{
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 180px;
+    margin-left: 500px;
     margin-top: 25px;
     height: 70px;
-    width:160px;
+    width:200px;
+    text-align: center;
+    padding-top: 16px;
+    color: red;
+    border-color: cyan;
+    font-size: 28px;
+}
+.Header2{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 450px;
+    margin-top: 25px;
+    height: 70px;
+    width:320px;
+    text-align: center;
+    padding-top: 15px;
+    color: red;
+    border-color: cyan;
+    font-size: 28px;
+}
+.Header3{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 420px;
+    margin-top: 25px;
+    height: 70px;
+    width:380px;
     text-align: center;
     padding-top: 20px;
     color: red;
     border-color: cyan;
+    font-size: 28px;
+}
+.Header4{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 450px;
+    margin-top: 25px;
+    height: 70px;
+    width:280px;
+    text-align: center;
+    padding-top: 15px;
+    color: red;
+    border-color: cyan;
+    font-size: 28px;
 }
 .Writing{
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 10px;
+    margin-left: 32px;
     margin-top: 20px;
-    height: 340px;
-    width:520px;
+    height: 500px;
+    width:540px;
     color: red;
     border-color: cyan;
 }

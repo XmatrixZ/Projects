@@ -1,0 +1,160 @@
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: normal;
+}
+body
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    width:100%;
+    overflow: hidden;
+    min-height: 100vh;
+}
+.glow
+{
+    position: relative;
+    min-width: 750px;
+    height: 750px;
+    margin: -200px;
+    animation: colorchange 5s linear infinite;
+}
+.glow span
+{
+    position: absolute;
+    top: calc(80px*var(--i));
+    left: calc(80px*var(--i));
+    right: calc(80px*var(--i));
+    bottom: calc(80px*var(--i));
+}
+.glow span::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left:200px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    backface-visibility: hidden;
+} 
+.glow span:nth-child(3n+1)::before
+{
+    background: greenyellow;
+    box-shadow: 0 0 10px 3px greenyellow;
+    
+}    
+.glow span:nth-child(3n+2)::before
+{
+    background: cyan;
+    box-shadow: 0 0 10px 3px cyan;
+    border: transparent;
+}    
+.glow span:nth-child(3n+3)::before
+{
+    background: red;
+    box-shadow: 0 0 10px 3px red;
+}  
+.glow span:nth-child(3n+1)
+{
+    animation: move1 28s alternate  linear infinite;
+}  
+.glow span:nth-child(3n+2)
+{
+    transform-origin: left bottom;
+    animation: move2 10s  alternate-reverse  infinite;
+}  
+.glow span:nth-child(3n+3)
+{
+    transform-origin: right top;
+    animation: move1 20s alternate  linear infinite;
+}  
+@keyframes colorchange
+{
+   0%
+   {
+       filter: hue-rotate(0deg);
+       transform: rotate(0deg);
+   } 
+   100%
+   {
+    filter: hue-rotate(360deg);
+    transform: rotate(360deg);
+   }
+}
+@keyframes move1
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+
+}
+@keyframes move2
+{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+
+}
+.Container1{
+    margin-left: 100px;
+    margin-top: 80px;
+    border-color: cyan;
+    height: 750px;
+    width:1100px;
+    position: absolute;
+}   
+.Header3{
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 25px;
+    height: 70px;
+    width:540px;
+    text-align: center;
+    padding-top: 20px;
+    color: red;
+    border-color: cyan;
+    font-size: 28px;
+}
+.Writing{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 340px;
+    margin-top: 110px;
+    height: 600px;
+    width:440px;
+    color: red;
+    border-color: cyan;
+}
+.link{
+    display: flex;
+    border: transparent;
+    margin-top: 75px;
+    margin-left: 160px;
+    font-size: 25px;
+    color: greenyellow;
+    text-decoration: none;
+}
+.link:hover
+{
+    position: relative;
+    color: rgb(255, 0, 234);
+}
